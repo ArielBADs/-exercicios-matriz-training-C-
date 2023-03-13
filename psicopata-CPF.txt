@@ -1,0 +1,30 @@
+Danerd é fissurado em CPFs.  Por isso, a primeira coisa que ele fez ao ser contratado pelo Helpdesk do CIn foi estabelecer uma senha padrão de cadastro para os novos alunos baseada no CPF de cada um. A senha é formada a partir do primeiro nome do aluno, em que todas as letras são deslocadas P posições no alfabeto, juntamente com os dois últimos números do CPF. A quantidade P é referente ao número do CPF que tem o mesmo índice que a letra do nome em questão. Ou seja, a primeira letra da senha será a primeira letra do nome descolada uma quantidade de posições no alfabeto de acordo com o primeiro número do CPF, e assim sucessivamente.
+
+Exemplo: liz 12345678911 ➔ l desloca 1 posição, i desloca 2 posições e z desloca 3 posições  ➔ senha: mkc11
+
+Formato de entrada
+
+A quantidade N de alunos que serão cadastrados, onde 1 <= N <= 20;
+
+O nome e o CPF dos N alunos, onde cada nome tem até 10 caracteres (todos minúsculos e sem espaço) e o cpf tem 11 caracteres numéricos.
+
+Formato de saída
+
+Lista dos nomes cadastrados em ordem alfabética e suas respectivas senhas criadas.
+
+Exemplos de:
+
+Entrada
+
+4
+elitop 75064421309
+anacigana 46245810125
+lulu 32079218102
+beethoven 09152777248
+
+Saída
+
+anacigana etcgnobnb25
+beethoven bnfyjvclp48
+elitop lqizst09
+lulu owlb02
