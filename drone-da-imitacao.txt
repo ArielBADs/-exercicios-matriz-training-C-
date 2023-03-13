@@ -1,0 +1,78 @@
+Marcelinho, conhecido como CEO dos salgados, a fim de maximizar o lucro do seu empreendimento,
+em parceria com o RobôCIn, decidiu investir em uma nova forma de entrega de salgados, a qual faz o uso de drones.
+Todavia, para evitar que a concorrência tenha acesso ao seu produto, Marcelinho decidiu criptografar o mapa usado pelo drone para fazer as entregas.
+
+Você, contratado por uma empresa local que deseja acabar com a dominância do mercado dos salgados exercida por Marcelinho,
+deve quebrar a criptografia usada pelo drone e descobrir o ponto de entrega.
+
+Felizmente, o código já foi quebrado e tudo que você precisa fazer é um programa que descobre as coordenadas x e y da entrega baseado no seguinte processo:
+
+- O mapa pode ser representado por uma matriz de caracteres;
+
+- O ponto de entrega pode ser identificado por um palíndromo contido nessa matriz;
+
+- Após achar o palíndromo, as coordenadas do ponto de entrega serão iguais a posição do primeiro caractere do palíndromo na matriz;
+
+* palíndromo: palavra, frase ou número que permanece igual quando lida de trás para diante.
+
+Formato de entrada
+
+Dois inteiros n e k, tal que n é o tamanho da matrix nxn e k é o tamanho do palíndromo desejado.
+
+Uma matriz de caracteres nxn.
+
+* n > 1
+
+* k > 1
+
+* a matriz conterá apenas UM palíndromo.
+
+Formato de saída
+
+Dois inteiros (x, y) contendo as coordenadas de entrega ou (-1, -1) quando o ponto não for encontrado.
+
+Exemplos de:
+
+Entrada
+
+10
+7
+acdefghytk
+oiutyajklp
+bcmajrruay
+musbcjetap
+qpndyjglau
+bzppdppyjj
+pojmnsgetk
+zmnsyfjgla
+qreviverjl
+abdhqiolsm
+
+Saída
+
+(8, 1)
+
+Entrada
+
+3
+3
+abc
+def
+ghi
+
+Saída
+
+(-1, -1)
+
+Entrada
+
+4
+3
+abcd
+afty
+odpi
+kfyt
+
+Saída
+
+(1, 1)
